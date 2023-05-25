@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>8b Archiv</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #222222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1, h2, p {
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      background: #ffffff;
+      border: none;
+      color: #222222;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      border: 3px solid white;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+    }
+
+    /* Animation für "what do you need?" */
+    .animated-text {
+      position: relative;
+      display: inline-block;
+    }
+
+    .animated-text::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, #ff0080, #00b0ff);
+      z-index: -1;
+      animation: animated-text-animation 2s linear infinite;
+      background-size: 200% 200%;
+    }
+
+    @keyframes animated-text-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Archiv der 8b (mit liebe gemacht)</h1>
+  
+  <h2 class="animated-text">what do you need?</h2>
+  
+  <div class="button-container">
+    <a href="biologie.html"><button>Biologie</button></a>
+    <a href="chemie.html"><button>Chemie</button></a>
+    <a href="chemie_uebung.html"><button>Chemie Übung</button></a>
+    <a href="deutsch.html"><button>Deutsch</button></a>
+    <a href="englisch.html"><button>Englisch</button></a>
+    <a href="ethik.html"><button>Ethik</button></a>
+    <a href="franzoesisch.html"><button>Französisch</button></a>
+    <a href="geschichte.html"><button>Geschichte</button></a>
+    <a href="latein_helfrig.html"><button>Latein (Helfrig)</button></a>
+    <a href="latein_roth.html"><button>Latein (Roth)</button></a>
+    <a href="mathe.html"><button>Mathe</button></a>
+    <a href="musik.html"><button>Musik</button></a>
+    <a href="physik.html"><button>Physik</button></a>
+    <a href="physik_uebung.html"><button>Physik Übung</button></a>
+    <a href="religion_evangelisch.html"><button>Religion (Evangelisch)</button></a>
+    <a href="religion_katholisch.html"><button>Religion (Katholisch)</button></a>
+  </div>
+
+  <p>geschrieben in HTML, CSS und JavaScript von einem Nebel</p>
+
+  <a href="code.html"><button>View the Code</button></a>
+</body>
+</html>

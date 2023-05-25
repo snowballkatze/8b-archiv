@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Masonry Bildergalerie</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .gallery {
+      margin: 10px auto;
+    }
+
+    .gallery-item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 30%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="C:\Users\ruedi\Pictures\Screenshots\position of adverbs.png" alt="Bild 1">
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\ruedi\Pictures\Screenshots\In the maze of London traffic.png" alt="Bild 2">
+    </div>
+    <div class="gallery-item">
+      <img src="bild3.jpg" alt="Bild 3">
+    </div>
+    <!-- Weitere Bilder hier hinzufügen -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <script>
+    var gallery = document.querySelector(".gallery");
+
+    var masonry = new Masonry(gallery, {
+      itemSelector: '.gallery-item',
+      columnWidth: '.gallery-item',
+      percentPosition: true
+    });
+  </script>
+</body>
+</html>
